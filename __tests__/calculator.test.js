@@ -36,9 +36,9 @@ describe('Calculator', () => {
     personMale.jupCalc();
     personMale.yearsLeft();
     expect(personMale.mercuryYearsLeft).toBeCloseTo(Math.abs(70.8 - personMale.mercuryAge, 1));
-    expect(personMale.venusYearsLeft).toBeCloseTo(70.8 - personMale.venusAge, 1);
-    expect(personMale.marsYearsLeft).toBeCloseTo(70.8 - personMale.marsAge, 1);
-    expect(personMale.jupYearsLeft).toBeCloseTo(70.8 - personMale.jupAge, 1);
+    expect(personMale.venusYearsLeft).toBeCloseTo(Math.abs(70.8 - personMale.venusAge, 1));
+    expect(personMale.marsYearsLeft).toBeCloseTo(Math.abs(70.8 - personMale.marsAge, 1));
+    expect(personMale.jupYearsLeft).toBeCloseTo(Math.abs(70.8 - personMale.jupAge, 1));
   });
 
   test('should return the amount of time left to live on each planet based on female gender (75.6yrs)', () => {
@@ -48,10 +48,10 @@ describe('Calculator', () => {
     personFemale.marsCalc();
     personFemale.jupCalc();
     personFemale.yearsLeft();
-    expect(personFemale.mercuryYearsLeft).toBeCloseTo(75.6 - personFemale.mercuryAge, 1);
-    expect(personFemale.venusYearsLeft).toBeCloseTo(75.6 - personFemale.venusAge, 1);
-    expect(personFemale.marsYearsLeft).toBeCloseTo(75.6 - personFemale.marsAge, 1);
-    expect(personFemale.jupYearsLeft).toBeCloseTo(75.6 - personFemale.jupAge, 1);
+    expect(personFemale.mercuryYearsLeft).toBeCloseTo(Math.abs(75.6 - personFemale.mercuryAge, 1));
+    expect(personFemale.venusYearsLeft).toBeCloseTo(Math.abs(75.6 - personFemale.venusAge, 1));
+    expect(personFemale.marsYearsLeft).toBeCloseTo(Math.abs(75.6 - personFemale.marsAge, 1));
+    expect(personFemale.jupYearsLeft).toBeCloseTo(Math.abs(75.6 - personFemale.jupAge, 1));
   });
 
 });
