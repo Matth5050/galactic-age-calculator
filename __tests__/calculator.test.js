@@ -1,6 +1,7 @@
 import Calculator from '../src/js/calculator';
 
 describe('Calculator', () => {
+  
   let reusablePerson;
 
   beforeEach(() => {
@@ -18,7 +19,7 @@ describe('Calculator', () => {
   });
 
   test('should return the users age in Mars years (input / 1.88)', () => {
-  
+    reusablePerson.marsCalc();
     expect(reusablePerson.marsAge).toBeCloseTo(13.8, 1);
   });
 

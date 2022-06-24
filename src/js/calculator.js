@@ -3,6 +3,7 @@ export default class Calculator {
       this.usersAge = input;
       this.mercuryAge = 0;
       this.venusAge = 0;
+      this.marsAge = 0;
     }
 
     mercCalc() {
@@ -11,6 +12,10 @@ export default class Calculator {
 
     venusCalc() {
       this.venusAge = this.usersAge/(.62);
+    }
+
+    marsCalc() {
+      this.marsAge = this.usersAge/(1.88);
     }
 
   }
