@@ -35,7 +35,7 @@ describe('Calculator', () => {
     personMale.marsCalc();
     personMale.jupCalc();
     personMale.yearsLeft();
-    expect(personMale.mercuryYearsLeft).toBeCloseTo(70.8 - personMale.mercuryAge, 1);
+    expect(personMale.mercuryYearsLeft).toBeCloseTo(Math.abs(70.8 - personMale.mercuryAge, 1));
     expect(personMale.venusYearsLeft).toBeCloseTo(70.8 - personMale.venusAge, 1);
     expect(personMale.marsYearsLeft).toBeCloseTo(70.8 - personMale.marsAge, 1);
     expect(personMale.jupYearsLeft).toBeCloseTo(70.8 - personMale.jupAge, 1);
