@@ -13,8 +13,8 @@ describe('Calculator', () => {
   });
 
   test('should return the users age in Venus years (input/.62)', () => {
-    
-    expect(reusablePerson.mercuryAge).toBeCloseTo(41.93);
+    reusablePerson.venusCalc();
+    expect(reusablePerson.venusAge).toBeCloseTo(41.93,1);
   });
 
 
