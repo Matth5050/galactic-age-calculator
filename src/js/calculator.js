@@ -8,6 +8,7 @@ export default class Calculator {
       this.jupAge = 0;
       this.mercuryYearsLeft = 0;
       this.venusYearsLeft = 0;
+   
       this.marsYearsLeft = 0;
       this.jupYearsLeft = 0;
     }
