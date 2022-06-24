@@ -58,11 +58,13 @@ describe('Calculator', () => {
     const personMale = new Calculator(26, 'male');
     personMale.mercCalc();
     personMale.yearsLeft()
-    
-    expect(personMale.determineAgeSpan()).toEqual('This is a negative number');
-    // if (Math.sign(this.mercuryYearsLeft) === -1) {
-    //   return 'This is a negative number';
-    // }
+    expect(personMale.determineAgeSpan(-5,'negitive','')).toEqual('negitive');
   });
 
+  test('should determine if user has NOT surpassed the the avg life expectancy and retrun appropriate response', () => {
+    const personMale = new Calculator(6, 'male');
+    personMale.mercCalc();
+    personMale.yearsLeft()
+    expect(personMale.determineAgeSpan(6,'','positive')).toEqual('positive');
+  });
 });

@@ -31,15 +31,23 @@ export default class Calculator {
 
     yearsLeft() {
       if (this.gender === 'male') {
-      this.mercuryYearsLeft = Math.abs(70.8 - this.mercuryAge);
-      this.venusYearsLeft = Math.abs(70.8 - this.venusAge);
-      this.marsYearsLeft = Math.abs(70.8 - this.marsAge);
-      this.jupYearsLeft = Math.abs(70.8 - this.jupAge);
+      this.mercuryYearsLeft = (70.8 - this.mercuryAge);
+      this.venusYearsLeft = (70.8 - this.venusAge);
+      this.marsYearsLeft = (70.8 - this.marsAge);
+      this.jupYearsLeft = (70.8 - this.jupAge);
       } else {
-      this.mercuryYearsLeft = Math.abs(75.6 - this.mercuryAge);
-      this.venusYearsLeft = Math.abs(75.6 - this.venusAge);
-      this.marsYearsLeft = Math.abs(75.6 - this.marsAge);
-      this.jupYearsLeft = Math.abs(75.6 - this.jupAge);
+      this.mercuryYearsLeft = (75.6 - this.mercuryAge);
+      this.venusYearsLeft = (75.6 - this.venusAge);
+      this.marsYearsLeft = (75.6 - this.marsAge);
+      this.jupYearsLeft = (75.6 - this.jupAge);
+    }
+  }
+
+  determineAgeSpan(objectInput,negitiveOut,posOut) {
+    if (Math.sign(objectInput) === -1) {
+      return negitiveOut;
+    } else {
+      return posOut;
     }
   }
   
