@@ -41,6 +41,10 @@ describe('Calculator', () => {
   });
 
   test('should return the amount of time left to live on each planet based on female gender (75.6yrs)', () => {
+    reusablePerson.mercCalc();
+    reusablePerson.venusCalc();
+    reusablePerson.marsCalc();
+    reusablePerson.jupCalc();
     reusablePerson.yearsLeftFemale();
     expect(reusablePerson.mercuryYearsLeft).toBeCloseTo(75.6 - reusablePerson.mercuryAge, 1);
     expect(reusablePerson.venusYearsLeft).toBeCloseTo(75.6 - reusablePerson.venusAge, 1);

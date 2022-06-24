@@ -28,11 +28,18 @@ export default class Calculator {
       this.jupAge = this.usersAge/(11.86);
     }
 
-    yearsLeft() {
+    yearsLeftMale() {
       this.mercuryYearsLeft = 70.8 - this.mercuryAge;
       this.venusYearsLeft = 70.8 - this.venusAge;
       this.marsYearsLeft = 70.8 - this.marsAge;
       this.jupYearsLeft = 70.8 - this.jupAge;
+    }
+
+    yearsLeftFemale() {
+      this.mercuryYearsLeft = 75.6 - this.mercuryAge;
+      this.venusYearsLeft = 75.6 - this.venusAge;
+      this.marsYearsLeft = 75.6 - this.marsAge;
+      this.jupYearsLeft = 75.6 - this.jupAge;
     }
 
   }
