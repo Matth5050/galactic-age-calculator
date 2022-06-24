@@ -33,11 +33,19 @@ describe('Calculator', () => {
     reusablePerson.venusCalc();
     reusablePerson.marsCalc();
     reusablePerson.jupCalc();
-    reusablePerson.yearsLeft();
+    reusablePerson.yearsLeftMale();
     expect(reusablePerson.mercuryYearsLeft).toBeCloseTo(70.8 - reusablePerson.mercuryAge, 1);
     expect(reusablePerson.venusYearsLeft).toBeCloseTo(70.8 - reusablePerson.venusAge, 1);
     expect(reusablePerson.marsYearsLeft).toBeCloseTo(70.8 - reusablePerson.marsAge, 1);
     expect(reusablePerson.jupYearsLeft).toBeCloseTo(70.8 - reusablePerson.jupAge, 1);
+  });
+
+  test('should return the amount of time left to live on each planet based on female gender (75.6yrs)', () => {
+    reusablePerson.yearsLeftFemale();
+    expect(reusablePerson.mercuryYearsLeft).toBeCloseTo(75.6 - reusablePerson.mercuryAge, 1);
+    expect(reusablePerson.venusYearsLeft).toBeCloseTo(75.6 - reusablePerson.venusAge, 1);
+    expect(reusablePerson.marsYearsLeft).toBeCloseTo(75.6 - reusablePerson.marsAge, 1);
+    expect(reusablePerson.jupYearsLeft).toBeCloseTo(75.6 - reusablePerson.jupAge, 1);
   });
 
 });
