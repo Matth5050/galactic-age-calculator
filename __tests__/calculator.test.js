@@ -24,7 +24,8 @@ describe('Calculator', () => {
   });
 
   test('should return the users age in Jupiter years (input / 11.86)', () => {
-    expect(reusablePerson.marsAge).toBeCloseTo(2.19, 1);
+    reusablePerson.jupCalc();
+    expect(reusablePerson.jupAge).toBeCloseTo(2.19, 1);
   });
 
 

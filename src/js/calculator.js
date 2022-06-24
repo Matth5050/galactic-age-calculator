@@ -4,6 +4,7 @@ export default class Calculator {
       this.mercuryAge = 0;
       this.venusAge = 0;
       this.marsAge = 0;
+      this.jupAge = 0;
     }
 
     mercCalc() {
@@ -16,6 +17,10 @@ export default class Calculator {
 
     marsCalc() {
       this.marsAge = this.usersAge/(1.88);
+    }
+
+    jupCalc() {
+      this.jupAge = this.usersAge/(11.86);
     }
 
   }
