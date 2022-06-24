@@ -1,10 +1,15 @@
 export default class Calculator {
-    constructor(ageInput) {
-      this.usersAge = ageInput;
+    constructor(input) {
+      this.usersAge = input;
+      this.mercuryAge = 0;
+      this.marsAge
     }
 
-    getArea() {
-      return this.side1 * this.side2;
+    mercCalc() {
+      this.mercuryAge = this.usersAge/(.24);
     }
-  
+
   }
+
+
+ 

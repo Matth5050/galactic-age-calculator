@@ -32,5 +32,13 @@
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matth5050/galactic-age-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Matth5050/galactic-age-calculator/issues"
+  },
+  "homepage": "https://github.com/Matth5050/galactic-age-calculator#readme"
 }

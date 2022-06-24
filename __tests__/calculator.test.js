@@ -8,6 +8,7 @@ describe('Calculator', () => {
 
   test('should return the users age in Mercury years (input/.24)', () => {
     let testPerson = new Calculator(26)
+    testPerson.mercCalc();
     expect(testPerson.mercuryAge).toBeCloseTo(108.33);
   });
 
