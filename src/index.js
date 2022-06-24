@@ -10,15 +10,14 @@ import Calculator from './js/calculator';
     let age_dt = new Date(month_diff);   
     let year = age_dt.getUTCFullYear();   
     let age = Math.abs(year - 1970); 
-    console.log(age);
+    return age;
  }
 
 
 $('form#ageForm').submit(function(event) {
     const dateControl = $('input[type="date"]').val();
     const genderInput = $("input:radio[name=gender]:checked").val();
-    let user = new Calculator(dateControl,genderInput);
-    dobCalc(dateControl);
+    let user = new Calculator(dobCalc(dateControl),genderInput);
     user.mercCalc();
     user.venusCalc();
     user.marsCalc();
