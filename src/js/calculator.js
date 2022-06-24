@@ -1,6 +1,7 @@
 export default class Calculator {
-    constructor(input) {
-      this.usersAge = input;
+    constructor(age,gender) {
+      this.usersAge = age;
+      this.gender = gender
       this.mercuryAge = 0;
       this.venusAge = 0;
       this.marsAge = 0;
