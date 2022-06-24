@@ -15,6 +15,7 @@ import Calculator from './js/calculator';
 
 
 $('form#ageForm').submit(function(event) {
+    event.preventDefault();
     const dateControl = $('input[type="date"]').val();
     const genderInput = $("input:radio[name=gender]:checked").val();
     let user = new Calculator(dobCalc(dateControl),genderInput);
@@ -23,10 +24,14 @@ $('form#ageForm').submit(function(event) {
     user.marsCalc();
     user.jupCalc();
     user.yearsLeft();
-    console.log(dateControl);
-    console.log(genderInput);
-    console.log(user);
+    $('.output-container').slideDown();
+    $('#merc').text(user.mercuryAge);
+    $('#venus').text(user.venusAge);
+    $('#mars').text(user.marsAge);
+    $('#jup').text(user.jupAge);
 
-
+    // console.log(dateControl);
+    // console.log(genderInput);
+    // console.log(user);
 }) 
 
