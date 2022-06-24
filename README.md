@@ -1,8 +1,8 @@
-# (Application Name)
+# Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### This app lets you determine what your age would be on some other planet!
 
-#### By (Your Name Here)
+#### By Matt Herbert
 
 ## Technologies Used
 
