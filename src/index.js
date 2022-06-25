@@ -50,14 +50,5 @@ $('form#ageForm').submit(function(event) {
     $('#marYrs').text(user.determineAgeSpan(marYearsLeft,marNegMessage,marPosMessage));
     $('#jup').text(user.jupAge);
     $('#jYrs').text(user.determineAgeSpan(jYearsLeft,jNegMessage,jPosMessage));
-    
-
-
-    
-    
-
-    // console.log(dateControl);
-    // console.log(genderInput);
-    // console.log(user);
 });
 
