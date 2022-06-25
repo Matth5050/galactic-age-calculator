@@ -26,6 +26,22 @@
   display: none;
 }
 
+#merc, #mercYrs {
+  color:red;
+}
+
+#venus, #venYrs {
+  color:orange;
+}
+
+#mars, #marYrs {
+  color:red;
+}
+
+#jup, #jYrs {
+  color:orange;
+}
+
 label {
   margin-left:10px;
   margin-right:10px; 
