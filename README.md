@@ -4,6 +4,8 @@
 
 #### By Matt Herbert
 
+#### View the site [here](https://matth5050.github.io/galactic-age-calculator/)
+
 ## Resources
 
 Outter space background taken from [Jen Saxena](https://medium.com/@jensaxena/css-tutorial-animated-geometric-galaxy-background-ad3835c36ce1)
