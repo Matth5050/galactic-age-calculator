@@ -65,6 +65,6 @@ describe('Calculator', () => {
     const personMale = new Calculator(6, 'male');
     personMale.mercCalc();
     personMale.yearsLeft()
-    expect(personMale.determineAgeSpan(personMale.mercuryYearsLeft,'test','positive')).toEqual('positive');
+    expect(personMale.determineAgeSpan(1,'test','positive')).toEqual('positive');
   });
 });
