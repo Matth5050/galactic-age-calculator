@@ -13,20 +13,11 @@ import Calculator from './js/calculator';
     return age;
  }
 
-//  function determineAgeSpan(objectInput,negitiveOut,posOut) {
-//     if (Math.sign(objectInput) === -1) {
-//       return negitiveOut;
-//     } else {
-//       return posOut;
-//     }
-//   }
-
 $('form#ageForm').submit(function(event) {
     event.preventDefault();
     const dateControl = $('input[type="date"]').val();
     const genderInput = $("input:radio[name=gender]:checked").val();
     let user = new Calculator(dobCalc(dateControl),genderInput);
-    // const coffin = (U+FE0F);
 
     user.mercCalc();
     user.venusCalc();
@@ -34,11 +25,11 @@ $('form#ageForm').submit(function(event) {
     user.jupCalc();
     user.yearsLeft();
 
-    let mercYearsLeft = user.mercuryYearsLeft;
+    let mercYearsLeft = user.mercuryYearsLeft
     const mercPosMessage = `you have ${mercYearsLeft} years to live on Mercury`;
     const mercNegMessage = `you have already surpassed your life expectancy by ${Math.abs(mercYearsLeft)} years on Mercury`;
 
-    let venYearsLeft = user.venusYearsLeft;
+    let venYearsLeft = user.venusYearsLeft
     const venPosMessage = `you have ${venYearsLeft} years to live on Venus`;
     const venNegMessage = `you have already surpassed your life expectancy by ${Math.abs(venYearsLeft)} years on Venus`;
 
@@ -59,14 +50,5 @@ $('form#ageForm').submit(function(event) {
     $('#marYrs').text(user.determineAgeSpan(marYearsLeft,marNegMessage,marPosMessage));
     $('#jup').text(user.jupAge);
     $('#jYrs').text(user.determineAgeSpan(jYearsLeft,jNegMessage,jPosMessage));
-    
-
-
-    
-    
-
-    // console.log(dateControl);
-    // console.log(genderInput);
-    // console.log(user);
 });
 

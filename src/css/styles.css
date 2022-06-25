@@ -7,7 +7,7 @@
 }
 
 .header1, .header2 {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .header2 {
@@ -26,21 +26,33 @@
   display: none;
 }
 
-#merc, #mercYrs {
-  color:red;
+#merc, #venus, #jupiter, #mars {
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
-#venus, #venYrs {
-  color:orange;
+#merc {
+  color: white;
 }
 
-#mars, #marYrs {
-  color:red;
+#venus {
+  color:rgb(246, 203, 165)
 }
 
-#jup, #jYrs {
-  color:orange;
+#jupiter {
+  color:rgb(235, 148, 153);
 }
+
+#mars {
+  color:rgb(247, 235, 167);
+}
+
+#mercYrs, #venYrs, #marYrs, #jYrs {
+  color: rgb(167, 243, 247);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
 
 label {
   margin-left:10px;
